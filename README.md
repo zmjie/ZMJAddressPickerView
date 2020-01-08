@@ -17,7 +17,7 @@ ZMJAddressPickerView is available through [CocoaPods](https://cocoapods.org). To
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ZMJAddressPickerView', '~> 0.0.1'
+pod 'ZMJAddressPickerView', '~> 0.0.2'
 ```
 
 ## Author
