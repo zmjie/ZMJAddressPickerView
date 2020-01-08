@@ -95,24 +95,66 @@
                                          @(15),
                                          @(-10),
                                          @(5)];
-        
-        zmj_keyframeAnimation.duration = 0.6f;
+
         zmj_keyframeAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
         
     }else {
         
         zmj_keyframeAnimation.values = @[@(0),
-//                                         @(-5),
-                                         @(-10),
-//                                         @(-15),
-                                         @(-20),
                                          @(-30),
                                          [NSNumber numberWithInt:view.zmj_height]];
         
-        zmj_keyframeAnimation.duration = 0.6f;
-        zmj_keyframeAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+        zmj_keyframeAnimation.keyTimes = @[@0.0f,
+                                           @0.25f,
+                                           @0.75f];
+        
+        zmj_keyframeAnimation.timingFunctions = @[[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
+                                                  [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
+                                                  [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
     }
     
+    zmj_keyframeAnimation.duration = 0.6f;
+    zmj_keyframeAnimation.fillMode = kCAFillModeForwards;
+    zmj_keyframeAnimation.removedOnCompletion = NO;
+    [view.layer addAnimation:zmj_keyframeAnimation forKey:@"zmj_keyframeAnimation"];
+}
+
++ (void)zmj_animationAlertView:(UIView *)view isShow:(BOOL)bl {
+    
+    CAKeyframeAnimation *zmj_keyframeAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+    
+    if (bl) {
+        
+        zmj_keyframeAnimation.values = @[[NSValue valueWithCATransform3D:CATransform3DMakeScale(0.01f, 0.01f, 1.0f)],
+                                         [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.1f, 1.1f, 1.0f)],
+                                         [NSValue valueWithCATransform3D:CATransform3DMakeScale(0.9f, 0.9f, 1.0f)],
+                                         [NSValue valueWithCATransform3D:CATransform3DIdentity]];
+        
+        zmj_keyframeAnimation.keyTimes = @[@0.0f,
+                                           @0.5f,
+                                           @0.75f,
+                                           @1.0f];
+        
+        zmj_keyframeAnimation.timingFunctions = @[[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
+                                                  [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
+                                                  [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
+                                                  [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+    }else {
+        
+        zmj_keyframeAnimation.values = @[[NSValue valueWithCATransform3D:CATransform3DIdentity],
+                                         [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.1f, 1.1f, 1.0f)],
+                                         [NSValue valueWithCATransform3D:CATransform3DMakeScale(0.01f, 0.01f, 1.0f)]];
+        
+        zmj_keyframeAnimation.keyTimes = @[@0.0f,
+                                           @0.45f,
+                                           @0.9f];
+        
+        zmj_keyframeAnimation.timingFunctions = @[[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
+                                                  [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
+                                                  [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+    }
+    
+    zmj_keyframeAnimation.duration = 0.6f;
     zmj_keyframeAnimation.fillMode = kCAFillModeForwards;
     zmj_keyframeAnimation.removedOnCompletion = NO;
     [view.layer addAnimation:zmj_keyframeAnimation forKey:@"zmj_keyframeAnimation"];

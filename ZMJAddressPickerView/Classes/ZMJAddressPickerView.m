@@ -37,6 +37,7 @@
 @property (assign, nonatomic) BOOL zmj_isShow;
 @property (assign, nonatomic) BOOL zmj_isHidden;
 
+@property (assign, nonatomic) ZMJAddressPickerViewStyle zmj_style;
 @property (copy, nonatomic) NSString *zmj_shengID;
 @property (copy, nonatomic) NSString *zmj_shiID;
 @property (copy, nonatomic) NSString *zmj_xianID;
@@ -45,12 +46,13 @@
 
 @implementation ZMJAddressPickerView
 
-- (instancetype)initWithFrame:(CGRect)frame zmj_shengID:(nullable NSString *)shengID zmj_shiID:(nullable NSString *)shiID zmj_xianID:(nullable NSString *)xianID {
+- (instancetype)initWithFrame:(CGRect)frame zmj_style:(ZMJAddressPickerViewStyle)style zmj_shengID:(nullable NSString *)shengID zmj_shiID:(nullable NSString *)shiID zmj_xianID:(nullable NSString *)xianID {
     self = [super initWithFrame:frame];
     if (self) {
         
         self.frame = frame;
         
+        _zmj_style = style;
         _zmj_shengID = shengID;
         _zmj_shiID = shiID;
         _zmj_xianID = xianID;
@@ -101,7 +103,23 @@
     }];
     [view addSubview:self];
     
-    [self.class zmj_animationSheetView:_zmj_whiteBgView isShow:YES];
+    switch (_zmj_style) {
+            
+        case ZMJAddressPickerViewSheet: {
+            
+            [self.class zmj_animationSheetView:_zmj_whiteBgView isShow:YES];
+        }
+            break;
+            
+        case ZMJAddressPickerViewAlert: {
+            
+            [self.class zmj_animationAlertView:_zmj_whiteBgView isShow:YES];
+        }
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (void)zmj_dismissBtn:(UIButton *)btn {
@@ -144,16 +162,32 @@
                 zmj_addressListModel2.name = @"";
             }
             
-            if ([self.zmj_delegate respondsToSelector:@selector(zmj_addressPickerViewShengObj:shiObj:xianObj:)]) {
+            if ([self.zmj_delegate respondsToSelector:@selector(zmj_addressPickerViewStyle:zmj_shengObj:zmj_shiObj:zmj_xianObj:)]) {
                 
-                [self.zmj_delegate zmj_addressPickerViewShengObj:zmj_addressListModel0 shiObj:zmj_addressListModel1 xianObj:zmj_addressListModel2];
+                [self.zmj_delegate zmj_addressPickerViewStyle:self.zmj_style zmj_shengObj:zmj_addressListModel0 zmj_shiObj:zmj_addressListModel1 zmj_xianObj:zmj_addressListModel2];
             }
         }
         
         [self removeFromSuperview];
     }];
     
-    [self.class zmj_animationSheetView:_zmj_whiteBgView isShow:NO];
+    switch (_zmj_style) {
+            
+        case ZMJAddressPickerViewSheet: {
+            
+            [self.class zmj_animationSheetView:_zmj_whiteBgView isShow:NO];
+        }
+            break;
+            
+        case ZMJAddressPickerViewAlert: {
+            
+            [self.class zmj_animationAlertView:_zmj_whiteBgView isShow:NO];
+        }
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (void)zmj_initView {
@@ -275,36 +309,80 @@
         make.edges.equalTo(self);
     }];
     
-    [_zmj_whiteBgView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.trailing.equalTo(self);
-        make.bottom.equalTo(self.mas_bottom).offset(zmj_size(50));
-    }];
-    
-    [_zmj_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.centerX.equalTo(self.zmj_whiteBgView);
-        make.height.mas_equalTo(zmj_size(50));
-    }];
-    
-    [_zmj_cancelBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.leading.equalTo(self.zmj_whiteBgView);
-        make.trailing.equalTo(self.zmj_titleLabel.mas_leading);
-        make.width.mas_equalTo(zmj_size(80));
-        make.height.equalTo(self.zmj_titleLabel);
-    }];
-    
-    [_zmj_determineBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.trailing.equalTo(self.zmj_whiteBgView);
-        make.leading.equalTo(self.zmj_titleLabel.mas_trailing);
-        make.width.equalTo(self.zmj_cancelBtn);
-        make.height.equalTo(self.zmj_titleLabel);
-    }];
-    
-    [_zmj_pickerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.zmj_titleLabel.mas_bottom);
-        make.leading.trailing.equalTo(self);
-        make.bottom.equalTo(self.zmj_whiteBgView.mas_bottom).offset(-zmj_size(45));
-        make.height.mas_equalTo(zmj_size(265));
-    }];
+    switch (_zmj_style) {
+            
+        case ZMJAddressPickerViewSheet: {
+            
+            [_zmj_whiteBgView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.leading.trailing.equalTo(self);
+                make.bottom.equalTo(self.mas_bottom).offset(zmj_size(50));
+            }];
+            
+            [_zmj_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.centerX.equalTo(self.zmj_whiteBgView);
+                make.height.mas_equalTo(zmj_size(50));
+            }];
+            
+            [_zmj_cancelBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.leading.equalTo(self.zmj_whiteBgView);
+                make.trailing.equalTo(self.zmj_titleLabel.mas_leading);
+                make.width.mas_equalTo(zmj_size(80));
+                make.height.equalTo(self.zmj_titleLabel);
+            }];
+            
+            [_zmj_determineBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.trailing.equalTo(self.zmj_whiteBgView);
+                make.leading.equalTo(self.zmj_titleLabel.mas_trailing);
+                make.width.equalTo(self.zmj_cancelBtn);
+                make.height.equalTo(self.zmj_titleLabel);
+            }];
+            
+            [_zmj_pickerView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.equalTo(self.zmj_titleLabel.mas_bottom);
+                make.leading.trailing.equalTo(self);
+                make.bottom.equalTo(self.zmj_whiteBgView.mas_bottom).offset(-zmj_size(45));
+                make.height.mas_equalTo(zmj_size(265));
+            }];
+        }
+            break;
+            
+        case ZMJAddressPickerViewAlert: {
+            
+            [_zmj_whiteBgView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.centerY.equalTo(self);
+                make.leading.equalTo(self).offset(zmj_size(20));
+                make.trailing.equalTo(self).offset(-zmj_size(20));
+            }];
+            
+            [_zmj_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.leading.trailing.equalTo(self.zmj_whiteBgView);
+                make.height.mas_equalTo(zmj_size(50));
+            }];
+            
+            [_zmj_pickerView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.equalTo(self.zmj_titleLabel.mas_bottom);
+                make.leading.trailing.equalTo(self.zmj_whiteBgView);
+                make.height.mas_equalTo(zmj_size(220));
+            }];
+            
+            [_zmj_cancelBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.equalTo(self.zmj_pickerView.mas_bottom);
+                make.leading.bottom.equalTo(self.zmj_whiteBgView);
+                make.height.mas_equalTo(zmj_size(60));
+            }];
+            
+            [_zmj_determineBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.centerY.equalTo(self.zmj_cancelBtn);
+                make.leading.equalTo(self.zmj_cancelBtn.mas_trailing).offset(1.0f);
+                make.trailing.equalTo(self.zmj_whiteBgView);
+                make.width.height.equalTo(self.zmj_cancelBtn);
+            }];
+        }
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
@@ -456,10 +534,23 @@
         _zmj_cancelBtn = [UIButton buttonWithType:UIButtonTypeSystem];
         [_zmj_cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
         _zmj_cancelBtn.titleLabel.font = zmj_pingFangSCRegularSize((zmj_defaultFontSize + 4));
-        _zmj_cancelBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         _zmj_cancelBtn.backgroundColor = [UIColor zmj_dynamicColor:[UIColor whiteColor] zmj_darkColor:[UIColor whiteColor]];
         [_zmj_cancelBtn addTarget:self action:@selector(zmj_btnAction:) forControlEvents:UIControlEventTouchUpInside];
-        [_zmj_cancelBtn setTitleEdgeInsets:UIEdgeInsetsMake(0, zmj_size(15), 0, 0)];
+        
+        switch (_zmj_style) {
+                
+            case ZMJAddressPickerViewSheet: {
+                
+                _zmj_cancelBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+                [_zmj_cancelBtn setTitleEdgeInsets:UIEdgeInsetsMake(0, zmj_size(15), 0, 0)];
+            }
+                break;
+                
+            case ZMJAddressPickerViewAlert:break;
+                
+            default:
+                break;
+        }
     }
     return _zmj_cancelBtn;
 }
@@ -469,10 +560,23 @@
         _zmj_determineBtn = [UIButton buttonWithType:UIButtonTypeSystem];
         [_zmj_determineBtn setTitle:@"确定" forState:UIControlStateNormal];
         _zmj_determineBtn.titleLabel.font = zmj_pingFangSCRegularSize((zmj_defaultFontSize + 4));
-        _zmj_determineBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
         _zmj_determineBtn.backgroundColor = [UIColor zmj_dynamicColor:[UIColor whiteColor] zmj_darkColor:[UIColor whiteColor]];
         [_zmj_determineBtn addTarget:self action:@selector(zmj_btnAction:) forControlEvents:UIControlEventTouchUpInside];
-        [_zmj_determineBtn setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, zmj_size(15))];
+        
+        switch (_zmj_style) {
+                
+            case ZMJAddressPickerViewSheet: {
+                
+                _zmj_determineBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
+                [_zmj_determineBtn setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, zmj_size(15))];
+            }
+                break;
+                
+            case ZMJAddressPickerViewAlert:break;
+                
+            default:
+                break;
+        }
     }
     return _zmj_determineBtn;
 }

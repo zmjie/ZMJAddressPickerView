@@ -11,15 +11,20 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSUInteger, ZMJAddressPickerViewStyle) {
+    ZMJAddressPickerViewSheet,
+    ZMJAddressPickerViewAlert,
+};
+
 @protocol zmj_addressPickerViewDelegate <NSObject>
 
-- (void)zmj_addressPickerViewShengObj:(ZMJAddressListModel *)obj0 shiObj:(ZMJAddressListModel *)obj1 xianObj:(ZMJAddressListModel *)obj2;
+- (void)zmj_addressPickerViewStyle:(ZMJAddressPickerViewStyle)style zmj_shengObj:(ZMJAddressListModel *)obj0 zmj_shiObj:(ZMJAddressListModel *)obj1 zmj_xianObj:(ZMJAddressListModel *)obj2;
 
 @end
 
 @interface ZMJAddressPickerView : UIView
 
-- (instancetype)initWithFrame:(CGRect)frame zmj_shengID:(nullable NSString *)shengID zmj_shiID:(nullable NSString *)shiID zmj_xianID:(nullable NSString *)xianID;
+- (instancetype)initWithFrame:(CGRect)frame zmj_style:(ZMJAddressPickerViewStyle)style zmj_shengID:(nullable NSString *)shengID zmj_shiID:(nullable NSString *)shiID zmj_xianID:(nullable NSString *)xianID;
 
 @property (weak, nonatomic) id<zmj_addressPickerViewDelegate>zmj_delegate;
 

@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)zmj_animationSheetView:(UIView *)view isShow:(BOOL)bl;
 
++ (void)zmj_animationAlertView:(UIView *)view isShow:(BOOL)bl;
+
 @end
 
 NS_ASSUME_NONNULL_END

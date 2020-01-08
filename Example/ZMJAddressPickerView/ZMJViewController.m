@@ -12,7 +12,10 @@
 
 @interface ZMJViewController () <zmj_addressPickerViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *zmj_titleLabel;
+@property (weak, nonatomic) IBOutlet UIButton *zmj_tapBtn1;
+@property (weak, nonatomic) IBOutlet UIButton *zmj_tapBtn2;
+@property (weak, nonatomic) IBOutlet UILabel *zmj_titleLabel1;
+@property (weak, nonatomic) IBOutlet UILabel *zmj_titleLabel2;
 
 @property (strong, nonatomic) ZMJAddressListModel *zmj_addressListModel0;
 @property (strong, nonatomic) ZMJAddressListModel *zmj_addressListModel1;
@@ -29,12 +32,19 @@
 
 - (IBAction)zmj_btnAction:(UIButton *)sender {
     
-    ZMJAddressPickerView *zmj_addressPickerView = [[ZMJAddressPickerView alloc] initWithFrame:self.view.bounds zmj_shengID:_zmj_addressListModel0 ? _zmj_addressListModel0.ID : nil zmj_shiID:_zmj_addressListModel1 ? _zmj_addressListModel1.ID : nil zmj_xianID:_zmj_addressListModel2 ? _zmj_addressListModel2.ID : nil];
+    ZMJAddressPickerViewStyle zmj_style = ZMJAddressPickerViewSheet;
+    
+    if ([sender isEqual:_zmj_tapBtn2]) {
+        
+        zmj_style = ZMJAddressPickerViewAlert;
+    }
+    
+    ZMJAddressPickerView *zmj_addressPickerView = [[ZMJAddressPickerView alloc] initWithFrame:self.view.bounds zmj_style:zmj_style zmj_shengID:_zmj_addressListModel0 ? _zmj_addressListModel0.ID : nil zmj_shiID:_zmj_addressListModel1 ? _zmj_addressListModel1.ID : nil zmj_xianID:_zmj_addressListModel2 ? _zmj_addressListModel2.ID : nil];
     zmj_addressPickerView.zmj_delegate = self;
     [zmj_addressPickerView zmj_show];
 }
 
-- (void)zmj_addressPickerViewShengObj:(ZMJAddressListModel *)obj0 shiObj:(ZMJAddressListModel *)obj1 xianObj:(ZMJAddressListModel *)obj2 {
+- (void)zmj_addressPickerViewStyle:(ZMJAddressPickerViewStyle)style zmj_shengObj:(ZMJAddressListModel *)obj0 zmj_shiObj:(ZMJAddressListModel *)obj1 zmj_xianObj:(ZMJAddressListModel *)obj2 {
     
     ZMJAddressListModel *zmj_addressListModel0 = (ZMJAddressListModel *)obj0;
     ZMJAddressListModel *zmj_addressListModel1 = (ZMJAddressListModel *)obj1;
@@ -48,7 +58,23 @@
     NSLog(@"%@-%@", zmj_addressListModel1.ID, zmj_addressListModel1.name);
     NSLog(@"%@-%@", zmj_addressListModel2.ID, zmj_addressListModel2.name);
     
-    _zmj_titleLabel.text = [NSString stringWithFormat:@"%@%@%@", zmj_addressListModel0.name, zmj_addressListModel1.name, zmj_addressListModel2.name];
+    switch (style) {
+            
+        case ZMJAddressPickerViewSheet: {
+            
+            _zmj_titleLabel1.text = [NSString stringWithFormat:@"%@%@%@", zmj_addressListModel0.name, zmj_addressListModel1.name, zmj_addressListModel2.name];
+        }
+            break;
+            
+        case ZMJAddressPickerViewAlert: {
+            
+            _zmj_titleLabel2.text = [NSString stringWithFormat:@"%@%@%@", zmj_addressListModel0.name, zmj_addressListModel1.name, zmj_addressListModel2.name];
+        }
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

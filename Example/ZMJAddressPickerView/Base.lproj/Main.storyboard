@@ -20,19 +20,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrX-bS-mLP">
-                                <rect key="frame" x="137.5" y="258.5" width="100" height="50"/>
+                                <rect key="frame" x="116.5" y="208.5" width="142" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="FHM-e2-tQY"/>
-                                    <constraint firstAttribute="width" constant="100" id="Ng9-6S-kiB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="选择地址"/>
+                                <state key="normal" title="选择地址-Sheet"/>
                                 <connections>
                                     <action selector="zmj_btnAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="ckn-XL-hbN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxH-Kb-JO1">
-                                <rect key="frame" x="187.5" y="328.5" width="0.0" height="0.0"/>
+                                <rect key="frame" x="187.5" y="278.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKL-fs-NMb">
+                                <rect key="frame" x="121.5" y="408.5" width="132" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dZq-NE-Vsh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="选择地址-Alert"/>
+                                <connections>
+                                    <action selector="zmj_btnAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="SJG-iA-hMd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yD-E7-QT5">
+                                <rect key="frame" x="187.5" y="478.5" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,13 +57,20 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vxH-Kb-JO1" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="2sZ-2t-ZOo"/>
-                            <constraint firstItem="HrX-bS-mLP" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" constant="-50" id="nul-66-Dgf"/>
+                            <constraint firstItem="FKL-fs-NMb" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="YRS-pY-68G"/>
+                            <constraint firstItem="HrX-bS-mLP" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" constant="-100" id="nul-66-Dgf"/>
                             <constraint firstItem="vxH-Kb-JO1" firstAttribute="top" secondItem="HrX-bS-mLP" secondAttribute="bottom" constant="20" id="rgH-0x-XDQ"/>
                             <constraint firstItem="HrX-bS-mLP" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="scY-IY-fax"/>
+                            <constraint firstItem="4yD-E7-QT5" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="uPs-Ga-AkX"/>
+                            <constraint firstItem="4yD-E7-QT5" firstAttribute="top" secondItem="FKL-fs-NMb" secondAttribute="bottom" constant="20" id="v7T-cK-BDE"/>
+                            <constraint firstItem="FKL-fs-NMb" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" constant="100" id="x7g-lo-MAQ"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="zmj_titleLabel" destination="vxH-Kb-JO1" id="fpl-9g-KBr"/>
+                        <outlet property="zmj_tapBtn1" destination="HrX-bS-mLP" id="ljL-a7-p4B"/>
+                        <outlet property="zmj_tapBtn2" destination="FKL-fs-NMb" id="IDh-XQ-QTL"/>
+                        <outlet property="zmj_titleLabel1" destination="vxH-Kb-JO1" id="CFv-Nb-OeO"/>
+                        <outlet property="zmj_titleLabel2" destination="4yD-E7-QT5" id="mnz-AG-svK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
