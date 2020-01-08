@@ -2,7 +2,7 @@
 //  ZMJAddressPickerView.m
 //  ZMJAddressPickerView
 //
-//  Created by qx on 2020/1/4.
+//  Created by zmjie on 2020/1/4.
 //
 
 #import "ZMJAddressPickerView.h"
@@ -44,21 +44,6 @@
 @end
 
 @implementation ZMJAddressPickerView
-
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        
-        self.frame = frame;
-        
-        [self zmj_initView];
-        [self zmj_initData];
-        [self zmj_makeSubViewsConstraints];
-        
-        [self layoutIfNeeded];
-    }
-    return self;
-}
 
 - (instancetype)initWithFrame:(CGRect)frame zmj_shengID:(nullable NSString *)shengID zmj_shiID:(nullable NSString *)shiID zmj_xianID:(nullable NSString *)xianID {
     self = [super initWithFrame:frame];
