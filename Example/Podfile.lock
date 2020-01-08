@@ -1,0 +1,29 @@
+PODS:
+  - Masonry (1.1.0)
+  - MJExtension (3.0.17)
+  - ZMJAddressPickerView (0.0.1):
+    - Masonry (~> 1.1.0)
+    - MJExtension (~> 3.0.17)
+
+DEPENDENCIES:
+  - Masonry (~> 1.1.0)
+  - MJExtension (~> 3.0.17)
+  - ZMJAddressPickerView (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Masonry
+    - MJExtension
+
+EXTERNAL SOURCES:
+  ZMJAddressPickerView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
+  ZMJAddressPickerView: 59e8b372da4d1690347bcdbf48efe2b1152371c0
+
+PODFILE CHECKSUM: dcae6f3e0308a1f386af9ecda1add2a33d2dda38
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,1430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0077E2C1E1042512F36A3204CFD42BEF /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E9672361DD6E72A63B4ED0AE592D7F25 /* NSObject+MJClass.m */; };
+		01E3E1FB1F9A0FA56C79608F8139A32F /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F72DCFE8A313ED52B65E3747C231FB /* MJExtensionConst.m */; };
+		033484819373AB7E020C0026CAE0F7BF /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5009B9EE016213CC6BF4007153158438 /* MJFoundation.m */; };
+		05452B06007B8F1969A23C3C9D494CBD /* MJExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F8B00CC5CD92FE992B871353A71625 /* MJExtension-dummy.m */; };
+		0582F87AAE32BB2FCF11D1A15633E750 /* UIColor+ZMJAddressPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = C5256DA9A12EFB7E4803B1DA953AC5AB /* UIColor+ZMJAddressPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05A040F35BF1C88F869404E1A940B493 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 98FC00B47F4926064A7DF20C52E4F260 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05EA1447EEA0EB669F8DEE73964A7C60 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 681F484FD79B8DDE3198E097F17C008F /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07288680C9E7EDC1E240E0E3C50EE65C /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3677327BA7A403163EDF457F0F036B99 /* NSObject+MJProperty.m */; };
+		0967598607D521318F69D7D39D517B20 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FACF99483524BCCC3562B96641588BE6 /* ViewController+MASAdditions.m */; };
+		098630ECDB64ED7B89F5F687C82B4AC3 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCC8D54B773732A96DA8DC70409A5DB /* NSArray+MASAdditions.m */; };
+		09FD15E1E34B795E64285088796D2859 /* Pods-ZMJAddressPickerView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48C498D9D75AC7B4E87A5A33DC351293 /* Pods-ZMJAddressPickerView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AF1AD35706D90B1A91F291B899EF8C0 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E52D40EC739B9AE866B389259C8EA845 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13FCD85450396BA20DF575FB7DFF6C5D /* Pods-ZMJAddressPickerView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDFA991FD076A67B44C653E232CEA92 /* Pods-ZMJAddressPickerView_Tests-dummy.m */; };
+		1972E85F0FCD0F3EAF28ED7CD036286E /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E82CA8F0032764F7506EAF884371C0 /* Masonry-dummy.m */; };
+		24ED260DDC0EA1F111431B2D7F4CD644 /* ZMJAddressModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5785F9A94E13190AF89DE804647035 /* ZMJAddressModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25E03213AA01D83EB415A04635B34F1A /* NSObject+MJKeyValue.h in Headers */ = {isa = PBXBuildFile; fileRef = C7A18AEF41EF67ECF32CDCE19686EF4A /* NSObject+MJKeyValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		280D36330BAC5715615FF4A8B42D60D6 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 6638E00E55F2720292850D62A487B771 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		297A3627CF2F032CBFDC61D1A3786E63 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE636C960F70931AF4BA47FE35C05D9 /* MASViewAttribute.m */; };
+		2F2737D7ECDBBACF60D7D6710FB82F43 /* ZMJAddress.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CC37DC531E29CB51FE7970ED69B5BF89 /* ZMJAddress.bundle */; };
+		346080C0D1CA23399ADD739D722D7CEF /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = B6B633FB786CAE5A04E2F1ACD33F5B19 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BAA6DDBE44238B40D6A72A16EF41814 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = A03BDB8CC3F800E97D103C4E6532E2D8 /* MJProperty.m */; };
+		3D32D66E565D4776A5E527D0DB88F812 /* ZMJAddressTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 64995AB67D41991EF2A31CFECA2BF615 /* ZMJAddressTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DA5F1D8E51CDD102A871C2F37770C7B /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 13FB25A8ECF2B4405C4031795A73D7F1 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41BBD20F99D3D0EFD9D38337503D4C1F /* MJExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5443B719E8F9FB2AC6F784F119D98B09 /* MJExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41C4A7E10ABE1668643FEA3E4F661343 /* ZMJXian.json in Sources */ = {isa = PBXBuildFile; fileRef = 004DD81BB8253A58D49889D1F34FF2F8 /* ZMJXian.json */; };
+		4B0981F9AC628CF5100C50FF4A163A4A /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A16A8601D83614F857C9A293ABB15C /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		517A9DA0F7ACEFB0F7ECA00EABFBE871 /* ZMJAddressTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 539A5E53A55436731EAF17C0D936A75E /* ZMJAddressTool.m */; };
+		51E7A17D617310CE81444F5D315EAEF0 /* NSString+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 7621B10988A34C0449174F6E69DAFDA7 /* NSString+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59E71F14664D3A43D135383BA8F55885 /* MJExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64AB7FA7E8EAEE699EC7DDC2F6E9E12 /* MJExtension.framework */; };
+		6A6AD3A5BBDBFD0B4AF936BD518EC0B1 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F593BF6BDBDF78956C8BB38D03355C /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EC015330CAC3D60745A20B01928B8DB /* NSObject+MJCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 847287FCCBC7A1F2A9ED7A369ED11154 /* NSObject+MJCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7155607EADA71F37CFE188D866B7E40A /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB0FAFA7C7F743F3F2BC4D249A9FF08 /* MJPropertyKey.m */; };
+		78B2727EE5D693F58D019DB098005101 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1124DA83608C7EA2EF9DE41393CD781C /* MASConstraintMaker.m */; };
+		7BE71B62F38458AC771581F60006F9CE /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9AAA5B9827C869F7E4133CBAFA2C28 /* NSObject+MJCoding.m */; };
+		7BFF65958F014760B6AC4742824892EB /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0356863D6E5EC27BD49395EE2787410A /* MASCompositeConstraint.m */; };
+		7D0EC3D0969396DA349F3F25A693E51D /* ZMJSheng.json in Sources */ = {isa = PBXBuildFile; fileRef = BA7D7FA1F119E9156B2CE3F4C6B5EA5B /* ZMJSheng.json */; };
+		813BD5E191263C99EB53ACE607B2CCCB /* UIView+ZMJAddressPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F9F9FD47B045F742E9BF45E9159FF6 /* UIView+ZMJAddressPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81FC9945D9B5002909A83E8FD7B47BE9 /* ZMJAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D0B1B17AA20F2EBF32B29F8E5DAD17 /* ZMJAddressPickerView.m */; };
+		83BC1D67D7EAF59855E74E4383BD9F59 /* Pods-ZMJAddressPickerView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BEB3C757F0F155901665429F6D7A786 /* Pods-ZMJAddressPickerView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8539B851E01A58467BE49CA3FA77223C /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CB01085E59C9A0219676880DD022FAEF /* MASLayoutConstraint.m */; };
+		85F733DC174F6DD3DC9F01541E5A7FC3 /* UIColor+ZMJAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F34A1C60915897AC8C0F03C7568866B3 /* UIColor+ZMJAddressPickerView.m */; };
+		8A2E1E487FBFC3DF55C12C056BFA36A1 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 31707AE6EEFCF309E0F7328EA3CB6E43 /* MJPropertyType.m */; };
+		8B4430373FB487DC579BB6A2E786DF0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E6F189FBC749E61E2693E259769E3B /* Foundation.framework */; };
+		8B92011C9373001132C8148BFC8F50B3 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 04A27ACA9C92920C22A93D4C5617B63F /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D4D1F6E4709EBB13974E95DC1059DDC /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 553310A89502977A320F1E0BE538C599 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D65CE579E516BDD5FB36CAA21D693F6 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = E98884D356FB24B156C4F4E437EB641C /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FC29E832DDAB80383225B6835060BA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E6F189FBC749E61E2693E259769E3B /* Foundation.framework */; };
+		912758556B9AB1DEEABE189955C5B8F2 /* MJExtensionConst.h in Headers */ = {isa = PBXBuildFile; fileRef = CC6ADD2B35003135407A4A9BE1163773 /* MJExtensionConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		941955A19C40899D275604E6E9C21A6D /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A5EFFB25095EAE987A2E501682C1B41 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9796F9FAC1941A992E8B17F31D62B2E4 /* MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 43939034895DD0F5DAEE741C90670B79 /* MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99BF63084CB0EDEA0A9CBB77E8315E6E /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = E30BD4605DE3598E0E42ACF9247B3874 /* NSObject+MJKeyValue.m */; };
+		9C4B2EAE1FF4D93738956A3D8E2D9B83 /* ZMJAddressPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2029352005B2CD1057F30EBFB114CE3F /* ZMJAddressPickerView-dummy.m */; };
+		9D546E1168C04B0B2EAE005D9275D18B /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F42C954F4A71D4C0A4350E0A0E066BDB /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A35FBEEC7D088AEC05297E8292A32C77 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDC5AE7E767DBE863253F7634968948 /* View+MASAdditions.m */; };
+		A47472F50A3A7869A644789159571A5C /* MJPropertyKey.h in Headers */ = {isa = PBXBuildFile; fileRef = B758ECBF2C54E6E3DDE4D9BBE7CA6C95 /* MJPropertyKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B22FE9B432193B8AA4BFF1BDED16473D /* ZMJShi.json in Sources */ = {isa = PBXBuildFile; fileRef = 97CBEA016BBFE56C75246C0A73A0D751 /* ZMJShi.json */; };
+		B524F6FF61A1C842F2760F3D7EDDC676 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E6F189FBC749E61E2693E259769E3B /* Foundation.framework */; };
+		B7D645EC004610E8A581E532D28771EC /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AE3AA312647F560C706E6E5EB6381C /* MASViewConstraint.m */; };
+		B94AD428EA4EFD7BA79BCF57680D390A /* MJPropertyType.h in Headers */ = {isa = PBXBuildFile; fileRef = C32643E4B37DF72CEC70A759F4CAA6A5 /* MJPropertyType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCE9882A043BAF11669E627808C3FEF7 /* NSString+ZMJAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EA5D1B0928375178A651BA3980D5F /* NSString+ZMJAddressPickerView.m */; };
+		BD740891903F033211F9D8F2B2D3F596 /* ZMJAddressPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F107FF3C80CF9C62D5C1F318CA19BDC /* ZMJAddressPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0861ADB4C5FA30F4F9E051F7638A264 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE0BD0D88524B229FABB0FEAE97A6D /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		C0C8961B2EAF90DA7244B427C569FCFD /* NSObject+MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E02BA42E398F5D391EFB47FBBC21B7E /* NSObject+MJProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C139F0E181C4C8FEAD814992370C1040 /* ZMJAddressPickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06C3FDB9DB1D0B1C5D74FF80CCEC12DF /* ZMJAddressPickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAD2539BE3C4AB2F1FD1DF30D7629238 /* MJFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D74AA66095E81B40911BDBB65472C9C /* MJFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE93C54413259B4AC3683B6EB874D466 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACFBD0CF3788D64E121C6375C570E59 /* UIKit.framework */; };
+		D7759D42CBD91DAA9B7DC4E1EA79A2D0 /* ZMJAddressPickerView_Macro.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B67D64BFFF34E0CF96A70F96031109C /* ZMJAddressPickerView_Macro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAA27204A46114C5500AD824C4E2720A /* UIView+ZMJAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 219596585517F2FA8993DC3A537FF496 /* UIView+ZMJAddressPickerView.m */; };
+		DBDA3AF2D8F6D30BD9A73E1AB2A0ECBC /* Pods-ZMJAddressPickerView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC3016844AE7968CFE56F98F8D97B8D /* Pods-ZMJAddressPickerView_Example-dummy.m */; };
+		E51F496BDC6ACADE04FDA059C6CB2342 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E6F189FBC749E61E2693E259769E3B /* Foundation.framework */; };
+		E6775033B3F0080B56E29AB395A08867 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C22C6800AD2F05FFC1A5DEDF9FA6B2 /* NSString+MJExtension.m */; };
+		E7CA20228B3583F41927813EE904CAD3 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B6DAC40B9EBE7C898E086A3F360FED33 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E87B28D055DEEBBB7468D956CA4549A3 /* NSString+ZMJAddressPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3040DC3CBA664AA8C000BF97DC21A157 /* NSString+ZMJAddressPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8DD5D1D406150E1C80AD015271B6848 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A40E74FB807A9EC8DC04A443C1830 /* MASConstraint.m */; };
+		EAE8B0895956885A752B173683A0D889 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A40AD9828CDB3C727C768DF1A8E28EC /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB59F09135B4E794A3CB945AB355A1AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E6F189FBC749E61E2693E259769E3B /* Foundation.framework */; };
+		F0EF96DAB145D1B2247C01B3517B54FE /* NSObject+MJClass.h in Headers */ = {isa = PBXBuildFile; fileRef = FB9B102FBC31861DB11DFDACBF21D4BF /* NSObject+MJClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F29F2BD423C4949E00432F35 /* UIButton+ZMJAddressPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = F29F2BD223C4949D00432F35 /* UIButton+ZMJAddressPickerView.h */; };
+		F29F2BD523C4949E00432F35 /* UIButton+ZMJAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29F2BD323C4949E00432F35 /* UIButton+ZMJAddressPickerView.m */; };
+		FAB7CF107E7E3EE6FA7949CF18B8BA12 /* MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = D06CE20BCF3148428FE2E618605D6E8B /* MJProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAFBFA90F7BC3E7CF50F8A5CF0A8B264 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = F4911F6ED1E0DE154A166191D1674C12 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC30DA66AF30EFB450C3297E11432B84 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A351F7174B273A01B63DDE0801F7AFDC /* Masonry.framework */; };
+		FD154EDD24FDEA908DC532CFF46CFB21 /* ZMJAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E382A968A4527675EAE57CAFFEFD8C /* ZMJAddressModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		056D248F2C2036AAB551EDA487E614AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D3BA58D0583DF37575CACAB3DDADC85;
+			remoteInfo = MJExtension;
+		};
+		112E415A1D20DF3D8CA845A489654A57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
+		2323FA98AD3F1E5DD4239C875993F461 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D3BA58D0583DF37575CACAB3DDADC85;
+			remoteInfo = MJExtension;
+		};
+		540AD20CDE7787069077A51BE929745A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0AB8B8ED3AD3A1F40244DDC9EA0376F;
+			remoteInfo = "Pods-ZMJAddressPickerView_Example";
+		};
+		7F40CB7AAF3EE3B7DD73B0E70CC071B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 484D17E95CEB47031A0213FD8593DDFA;
+			remoteInfo = ZMJAddressPickerView;
+		};
+		8B6CA1CF73083519B36C37D3A9A16E8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		004DD81BB8253A58D49889D1F34FF2F8 /* ZMJXian.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = ZMJXian.json; sourceTree = "<group>"; };
+		0356863D6E5EC27BD49395EE2787410A /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		04A27ACA9C92920C22A93D4C5617B63F /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		05E6F189FBC749E61E2693E259769E3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		06C3FDB9DB1D0B1C5D74FF80CCEC12DF /* ZMJAddressPickerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZMJAddressPickerView-umbrella.h"; sourceTree = "<group>"; };
+		08711DABE11199457B21C0E6D73BBB3C /* Pods-ZMJAddressPickerView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZMJAddressPickerView_Example.modulemap"; sourceTree = "<group>"; };
+		08F57EEA073F599F95B2DCAC0BFB5AB0 /* Pods-ZMJAddressPickerView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZMJAddressPickerView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0A1EA5D1B0928375178A651BA3980D5F /* NSString+ZMJAddressPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+ZMJAddressPickerView.m"; path = "ZMJAddressPickerView/Classes/NSString+ZMJAddressPickerView.m"; sourceTree = "<group>"; };
+		0BB0FAFA7C7F743F3F2BC4D249A9FF08 /* MJPropertyKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJPropertyKey.m; path = MJExtension/MJPropertyKey.m; sourceTree = "<group>"; };
+		0CC3016844AE7968CFE56F98F8D97B8D /* Pods-ZMJAddressPickerView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZMJAddressPickerView_Example-dummy.m"; sourceTree = "<group>"; };
+		1124DA83608C7EA2EF9DE41393CD781C /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		1288F265D66A120CA242F3826F08AF64 /* Pods-ZMJAddressPickerView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZMJAddressPickerView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		13FB25A8ECF2B4405C4031795A73D7F1 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		1D74AA66095E81B40911BDBB65472C9C /* MJFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJFoundation.h; path = MJExtension/MJFoundation.h; sourceTree = "<group>"; };
+		1DE636C960F70931AF4BA47FE35C05D9 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2029352005B2CD1057F30EBFB114CE3F /* ZMJAddressPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZMJAddressPickerView-dummy.m"; sourceTree = "<group>"; };
+		219596585517F2FA8993DC3A537FF496 /* UIView+ZMJAddressPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ZMJAddressPickerView.m"; path = "ZMJAddressPickerView/Classes/UIView+ZMJAddressPickerView.m"; sourceTree = "<group>"; };
+		24AE3AA312647F560C706E6E5EB6381C /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		2A5EFFB25095EAE987A2E501682C1B41 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		2B276B0A79173A1D6E83C9B4FB9A4A57 /* MJExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C5785F9A94E13190AF89DE804647035 /* ZMJAddressModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZMJAddressModel.h; path = ZMJAddressPickerView/Classes/ZMJAddressModel.h; sourceTree = "<group>"; };
+		2D0A3EB68AD3D06D6D527EF2C31ACB87 /* Pods-ZMJAddressPickerView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZMJAddressPickerView_Tests-Info.plist"; sourceTree = "<group>"; };
+		3040DC3CBA664AA8C000BF97DC21A157 /* NSString+ZMJAddressPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+ZMJAddressPickerView.h"; path = "ZMJAddressPickerView/Classes/NSString+ZMJAddressPickerView.h"; sourceTree = "<group>"; };
+		31707AE6EEFCF309E0F7328EA3CB6E43 /* MJPropertyType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJPropertyType.m; path = MJExtension/MJPropertyType.m; sourceTree = "<group>"; };
+		3677327BA7A403163EDF457F0F036B99 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJProperty.m"; path = "MJExtension/NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		3BDFA991FD076A67B44C653E232CEA92 /* Pods-ZMJAddressPickerView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZMJAddressPickerView_Tests-dummy.m"; sourceTree = "<group>"; };
+		3E02BA42E398F5D391EFB47FBBC21B7E /* NSObject+MJProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJProperty.h"; path = "MJExtension/NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		43939034895DD0F5DAEE741C90670B79 /* MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJExtension.h; path = MJExtension/MJExtension.h; sourceTree = "<group>"; };
+		48C498D9D75AC7B4E87A5A33DC351293 /* Pods-ZMJAddressPickerView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZMJAddressPickerView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		49F72DCFE8A313ED52B65E3747C231FB /* MJExtensionConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJExtensionConst.m; path = MJExtension/MJExtensionConst.m; sourceTree = "<group>"; };
+		4B67D64BFFF34E0CF96A70F96031109C /* ZMJAddressPickerView_Macro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZMJAddressPickerView_Macro.h; path = ZMJAddressPickerView/Classes/ZMJAddressPickerView_Macro.h; sourceTree = "<group>"; };
+		4C7A40E74FB807A9EC8DC04A443C1830 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		4E32E3D5E19720C690D17259A4883D60 /* ZMJAddressPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZMJAddressPickerView-prefix.pch"; sourceTree = "<group>"; };
+		5009B9EE016213CC6BF4007153158438 /* MJFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJFoundation.m; path = MJExtension/MJFoundation.m; sourceTree = "<group>"; };
+		539A5E53A55436731EAF17C0D936A75E /* ZMJAddressTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZMJAddressTool.m; path = ZMJAddressPickerView/Classes/ZMJAddressTool.m; sourceTree = "<group>"; };
+		5443B719E8F9FB2AC6F784F119D98B09 /* MJExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJExtension-umbrella.h"; sourceTree = "<group>"; };
+		553310A89502977A320F1E0BE538C599 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		5A40AD9828CDB3C727C768DF1A8E28EC /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		5A71E49E2123504FDDB1C626669CF8EC /* MJExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MJExtension-Info.plist"; sourceTree = "<group>"; };
+		5BEB3C757F0F155901665429F6D7A786 /* Pods-ZMJAddressPickerView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZMJAddressPickerView_Example-umbrella.h"; sourceTree = "<group>"; };
+		5C6F69CB797AF3E5359F8E3E6E3104D9 /* ZMJAddressPickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZMJAddressPickerView.xcconfig; sourceTree = "<group>"; };
+		611DE21D2C8EAA85610DF21DAD631EC3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		64995AB67D41991EF2A31CFECA2BF615 /* ZMJAddressTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZMJAddressTool.h; path = ZMJAddressPickerView/Classes/ZMJAddressTool.h; sourceTree = "<group>"; };
+		65F8AF9CAC9C531B29DBA8D0C87D1F61 /* Pods_ZMJAddressPickerView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZMJAddressPickerView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6638E00E55F2720292850D62A487B771 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		681F484FD79B8DDE3198E097F17C008F /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		6A8409E2EFEB57AA4106E583A0A84C4A /* ZMJAddressPickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZMJAddressPickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BF2724B34C772871F6D7BD7F8FFF111 /* Pods-ZMJAddressPickerView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZMJAddressPickerView_Tests.modulemap"; sourceTree = "<group>"; };
+		6D0D8CD2CA8DFE1BA64D00AD280C3854 /* Pods-ZMJAddressPickerView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZMJAddressPickerView_Example-Info.plist"; sourceTree = "<group>"; };
+		7621B10988A34C0449174F6E69DAFDA7 /* NSString+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MJExtension.h"; path = "MJExtension/NSString+MJExtension.h"; sourceTree = "<group>"; };
+		7B81F16ED8CFCD521E9368E86BC1BB89 /* Pods-ZMJAddressPickerView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZMJAddressPickerView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7F107FF3C80CF9C62D5C1F318CA19BDC /* ZMJAddressPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZMJAddressPickerView.h; path = ZMJAddressPickerView/Classes/ZMJAddressPickerView.h; sourceTree = "<group>"; };
+		84184AD76A51782291BFBE8037B07C4D /* MJExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MJExtension.modulemap; sourceTree = "<group>"; };
+		847287FCCBC7A1F2A9ED7A369ED11154 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJCoding.h"; path = "MJExtension/NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		88AF954CCA9E3E48AEE3DF0D6EDCB425 /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
+		95E8ACE319A5C58E0A9C851BEC6F6541 /* MJExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJExtension-prefix.pch"; sourceTree = "<group>"; };
+		96F9F9FD47B045F742E9BF45E9159FF6 /* UIView+ZMJAddressPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ZMJAddressPickerView.h"; path = "ZMJAddressPickerView/Classes/UIView+ZMJAddressPickerView.h"; sourceTree = "<group>"; };
+		97CBEA016BBFE56C75246C0A73A0D751 /* ZMJShi.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = ZMJShi.json; sourceTree = "<group>"; };
+		98FC00B47F4926064A7DF20C52E4F260 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		9A9AAA5B9827C869F7E4133CBAFA2C28 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJCoding.m"; path = "MJExtension/NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		9ADE0BD0D88524B229FABB0FEAE97A6D /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A03BDB8CC3F800E97D103C4E6532E2D8 /* MJProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJProperty.m; path = MJExtension/MJProperty.m; sourceTree = "<group>"; };
+		A1D0B1B17AA20F2EBF32B29F8E5DAD17 /* ZMJAddressPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZMJAddressPickerView.m; path = ZMJAddressPickerView/Classes/ZMJAddressPickerView.m; sourceTree = "<group>"; };
+		A351F7174B273A01B63DDE0801F7AFDC /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8359A1275B2FCCECD3B575464CD6C4C /* Pods-ZMJAddressPickerView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZMJAddressPickerView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		ADF7E4DBB3579C5FE6F0C25F56E92443 /* Pods-ZMJAddressPickerView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZMJAddressPickerView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B1156B5B5E25908547F8759A12ECE047 /* Pods_ZMJAddressPickerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZMJAddressPickerView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B137879EFA1044BCD8AFA4BE22006705 /* Pods-ZMJAddressPickerView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZMJAddressPickerView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B3D7325C4DDA27658044C75284B7D8B7 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		B6B633FB786CAE5A04E2F1ACD33F5B19 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		B6DAC40B9EBE7C898E086A3F360FED33 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B758ECBF2C54E6E3DDE4D9BBE7CA6C95 /* MJPropertyKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJPropertyKey.h; path = MJExtension/MJPropertyKey.h; sourceTree = "<group>"; };
+		B8C22C6800AD2F05FFC1A5DEDF9FA6B2 /* NSString+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MJExtension.m"; path = "MJExtension/NSString+MJExtension.m"; sourceTree = "<group>"; };
+		B9A16A8601D83614F857C9A293ABB15C /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		BA7D7FA1F119E9156B2CE3F4C6B5EA5B /* ZMJSheng.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = ZMJSheng.json; sourceTree = "<group>"; };
+		BFCC8D54B773732A96DA8DC70409A5DB /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		C32643E4B37DF72CEC70A759F4CAA6A5 /* MJPropertyType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJPropertyType.h; path = MJExtension/MJPropertyType.h; sourceTree = "<group>"; };
+		C5256DA9A12EFB7E4803B1DA953AC5AB /* UIColor+ZMJAddressPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ZMJAddressPickerView.h"; path = "ZMJAddressPickerView/Classes/UIColor+ZMJAddressPickerView.h"; sourceTree = "<group>"; };
+		C7A18AEF41EF67ECF32CDCE19686EF4A /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJKeyValue.h"; path = "MJExtension/NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		CACFBD0CF3788D64E121C6375C570E59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CB01085E59C9A0219676880DD022FAEF /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		CC37DC531E29CB51FE7970ED69B5BF89 /* ZMJAddress.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ZMJAddress.bundle; path = ZMJAddressPickerView/Classes/ZMJAddress.bundle; sourceTree = "<group>"; };
+		CC6ADD2B35003135407A4A9BE1163773 /* MJExtensionConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJExtensionConst.h; path = MJExtension/MJExtensionConst.h; sourceTree = "<group>"; };
+		CF242A80B16336874C9EE88C1ACE3BB4 /* Pods-ZMJAddressPickerView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZMJAddressPickerView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D06CE20BCF3148428FE2E618605D6E8B /* MJProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJProperty.h; path = MJExtension/MJProperty.h; sourceTree = "<group>"; };
+		D0716B409ECFD3AC35D305DE9322FD58 /* MJExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJExtension.xcconfig; sourceTree = "<group>"; };
+		D4E82CA8F0032764F7506EAF884371C0 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		D4F8B00CC5CD92FE992B871353A71625 /* MJExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJExtension-dummy.m"; sourceTree = "<group>"; };
+		D6F593BF6BDBDF78956C8BB38D03355C /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
+		D99E915C60C77B63EF262CF960E6873C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DC1CF4FEB07138B057038147964F4D85 /* Pods-ZMJAddressPickerView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZMJAddressPickerView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		DDDCB77D3A15A9923878FB4EA2F6B057 /* Pods-ZMJAddressPickerView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZMJAddressPickerView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E1FF5D24C4704BEF8156A078187CFD04 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
+		E30BD4605DE3598E0E42ACF9247B3874 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJKeyValue.m"; path = "MJExtension/NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		E52D40EC739B9AE866B389259C8EA845 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		E656D33BA2F7A567B68DA12B1B07D752 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
+		E6E382A968A4527675EAE57CAFFEFD8C /* ZMJAddressModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZMJAddressModel.m; path = ZMJAddressPickerView/Classes/ZMJAddressModel.m; sourceTree = "<group>"; };
+		E9672361DD6E72A63B4ED0AE592D7F25 /* NSObject+MJClass.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJClass.m"; path = "MJExtension/NSObject+MJClass.m"; sourceTree = "<group>"; };
+		E98884D356FB24B156C4F4E437EB641C /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		ECDC5AE7E767DBE863253F7634968948 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		EDCBAE382E090E2A8DEB96336FB5F20E /* ZMJAddressPickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZMJAddressPickerView.modulemap; sourceTree = "<group>"; };
+		EE51111C50C7E69CB902572CE726C582 /* ZMJAddressPickerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZMJAddressPickerView-Info.plist"; sourceTree = "<group>"; };
+		F29F2BD223C4949D00432F35 /* UIButton+ZMJAddressPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIButton+ZMJAddressPickerView.h"; path = "ZMJAddressPickerView/Classes/UIButton+ZMJAddressPickerView.h"; sourceTree = "<group>"; };
+		F29F2BD323C4949E00432F35 /* UIButton+ZMJAddressPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIButton+ZMJAddressPickerView.m"; path = "ZMJAddressPickerView/Classes/UIButton+ZMJAddressPickerView.m"; sourceTree = "<group>"; };
+		F34A1C60915897AC8C0F03C7568866B3 /* UIColor+ZMJAddressPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ZMJAddressPickerView.m"; path = "ZMJAddressPickerView/Classes/UIColor+ZMJAddressPickerView.m"; sourceTree = "<group>"; };
+		F42C954F4A71D4C0A4350E0A0E066BDB /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		F4911F6ED1E0DE154A166191D1674C12 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		F64AB7FA7E8EAEE699EC7DDC2F6E9E12 /* MJExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA536213E4C1D02CF9088397A3077A23 /* ZMJAddressPickerView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ZMJAddressPickerView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FACF99483524BCCC3562B96641588BE6 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		FB9B102FBC31861DB11DFDACBF21D4BF /* NSObject+MJClass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJClass.h"; path = "MJExtension/NSObject+MJClass.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CED0D74EF6BFDC389C91EDF64F4A673 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4430373FB487DC579BB6A2E786DF0A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E047F76604659BF1B2099B2C412AC93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E51F496BDC6ACADE04FDA059C6CB2342 /* Foundation.framework in Frameworks */,
+				CE93C54413259B4AC3683B6EB874D466 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB80CEBE035857F4C5DFE9DAEF71078F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B524F6FF61A1C842F2760F3D7EDDC676 /* Foundation.framework in Frameworks */,
+				FC30DA66AF30EFB450C3297E11432B84 /* Masonry.framework in Frameworks */,
+				59E71F14664D3A43D135383BA8F55885 /* MJExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE11BBF36CEE7D7E0EF9F09FFA861FD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB59F09135B4E794A3CB945AB355A1AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DFB7F06EC80553131DB5B0993D681C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FC29E832DDAB80383225B6835060BA1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1256B7EDBB80D9CA9949E473377FDBA1 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				611DE21D2C8EAA85610DF21DAD631EC3 /* LICENSE */,
+				D99E915C60C77B63EF262CF960E6873C /* README.md */,
+				FA536213E4C1D02CF9088397A3077A23 /* ZMJAddressPickerView.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		17CD8C4237B869033F0C4FCDC3FC214C /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				E98884D356FB24B156C4F4E437EB641C /* MASCompositeConstraint.h */,
+				0356863D6E5EC27BD49395EE2787410A /* MASCompositeConstraint.m */,
+				2A5EFFB25095EAE987A2E501682C1B41 /* MASConstraint.h */,
+				4C7A40E74FB807A9EC8DC04A443C1830 /* MASConstraint.m */,
+				F42C954F4A71D4C0A4350E0A0E066BDB /* MASConstraint+Private.h */,
+				F4911F6ED1E0DE154A166191D1674C12 /* MASConstraintMaker.h */,
+				1124DA83608C7EA2EF9DE41393CD781C /* MASConstraintMaker.m */,
+				553310A89502977A320F1E0BE538C599 /* MASLayoutConstraint.h */,
+				CB01085E59C9A0219676880DD022FAEF /* MASLayoutConstraint.m */,
+				B6B633FB786CAE5A04E2F1ACD33F5B19 /* Masonry.h */,
+				6638E00E55F2720292850D62A487B771 /* MASUtilities.h */,
+				13FB25A8ECF2B4405C4031795A73D7F1 /* MASViewAttribute.h */,
+				1DE636C960F70931AF4BA47FE35C05D9 /* MASViewAttribute.m */,
+				5A40AD9828CDB3C727C768DF1A8E28EC /* MASViewConstraint.h */,
+				24AE3AA312647F560C706E6E5EB6381C /* MASViewConstraint.m */,
+				681F484FD79B8DDE3198E097F17C008F /* NSArray+MASAdditions.h */,
+				BFCC8D54B773732A96DA8DC70409A5DB /* NSArray+MASAdditions.m */,
+				98FC00B47F4926064A7DF20C52E4F260 /* NSArray+MASShorthandAdditions.h */,
+				E52D40EC739B9AE866B389259C8EA845 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				9ADE0BD0D88524B229FABB0FEAE97A6D /* NSLayoutConstraint+MASDebugAdditions.m */,
+				B9A16A8601D83614F857C9A293ABB15C /* View+MASAdditions.h */,
+				ECDC5AE7E767DBE863253F7634968948 /* View+MASAdditions.m */,
+				B6DAC40B9EBE7C898E086A3F360FED33 /* View+MASShorthandAdditions.h */,
+				04A27ACA9C92920C22A93D4C5617B63F /* ViewController+MASAdditions.h */,
+				FACF99483524BCCC3562B96641588BE6 /* ViewController+MASAdditions.m */,
+				67476A3571E92802EC16CCA3743979D2 /* Support Files */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		21D0531455DBC060F9B5C389FCC839DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC37DC531E29CB51FE7970ED69B5BF89 /* ZMJAddress.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		46E5BC92139E402A795D50B5B343C9DA /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				43939034895DD0F5DAEE741C90670B79 /* MJExtension.h */,
+				CC6ADD2B35003135407A4A9BE1163773 /* MJExtensionConst.h */,
+				49F72DCFE8A313ED52B65E3747C231FB /* MJExtensionConst.m */,
+				1D74AA66095E81B40911BDBB65472C9C /* MJFoundation.h */,
+				5009B9EE016213CC6BF4007153158438 /* MJFoundation.m */,
+				D06CE20BCF3148428FE2E618605D6E8B /* MJProperty.h */,
+				A03BDB8CC3F800E97D103C4E6532E2D8 /* MJProperty.m */,
+				B758ECBF2C54E6E3DDE4D9BBE7CA6C95 /* MJPropertyKey.h */,
+				0BB0FAFA7C7F743F3F2BC4D249A9FF08 /* MJPropertyKey.m */,
+				C32643E4B37DF72CEC70A759F4CAA6A5 /* MJPropertyType.h */,
+				31707AE6EEFCF309E0F7328EA3CB6E43 /* MJPropertyType.m */,
+				FB9B102FBC31861DB11DFDACBF21D4BF /* NSObject+MJClass.h */,
+				E9672361DD6E72A63B4ED0AE592D7F25 /* NSObject+MJClass.m */,
+				847287FCCBC7A1F2A9ED7A369ED11154 /* NSObject+MJCoding.h */,
+				9A9AAA5B9827C869F7E4133CBAFA2C28 /* NSObject+MJCoding.m */,
+				C7A18AEF41EF67ECF32CDCE19686EF4A /* NSObject+MJKeyValue.h */,
+				E30BD4605DE3598E0E42ACF9247B3874 /* NSObject+MJKeyValue.m */,
+				3E02BA42E398F5D391EFB47FBBC21B7E /* NSObject+MJProperty.h */,
+				3677327BA7A403163EDF457F0F036B99 /* NSObject+MJProperty.m */,
+				7621B10988A34C0449174F6E69DAFDA7 /* NSString+MJExtension.h */,
+				B8C22C6800AD2F05FFC1A5DEDF9FA6B2 /* NSString+MJExtension.m */,
+				7598E7C793024978E2B1C4F5A54AABB0 /* Support Files */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		67476A3571E92802EC16CCA3743979D2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1FF5D24C4704BEF8156A078187CFD04 /* Masonry.modulemap */,
+				E656D33BA2F7A567B68DA12B1B07D752 /* Masonry.xcconfig */,
+				D4E82CA8F0032764F7506EAF884371C0 /* Masonry-dummy.m */,
+				88AF954CCA9E3E48AEE3DF0D6EDCB425 /* Masonry-Info.plist */,
+				B3D7325C4DDA27658044C75284B7D8B7 /* Masonry-prefix.pch */,
+				D6F593BF6BDBDF78956C8BB38D03355C /* Masonry-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		67D5B022BFA4E3B894E53DAA16306F39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17CD8C4237B869033F0C4FCDC3FC214C /* Masonry */,
+				46E5BC92139E402A795D50B5B343C9DA /* MJExtension */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7598E7C793024978E2B1C4F5A54AABB0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				84184AD76A51782291BFBE8037B07C4D /* MJExtension.modulemap */,
+				D0716B409ECFD3AC35D305DE9322FD58 /* MJExtension.xcconfig */,
+				D4F8B00CC5CD92FE992B871353A71625 /* MJExtension-dummy.m */,
+				5A71E49E2123504FDDB1C626669CF8EC /* MJExtension-Info.plist */,
+				95E8ACE319A5C58E0A9C851BEC6F6541 /* MJExtension-prefix.pch */,
+				5443B719E8F9FB2AC6F784F119D98B09 /* MJExtension-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MJExtension";
+			sourceTree = "<group>";
+		};
+		7AD0E737C5C6CE388B1B0F44F25A4EB9 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				05E6F189FBC749E61E2693E259769E3B /* Foundation.framework */,
+				CACFBD0CF3788D64E121C6375C570E59 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		92A34D0BBAFE2F42718672994ECEE042 /* ZMJAddress.bundle */ = {
+			isa = PBXGroup;
+			children = (
+				BA7D7FA1F119E9156B2CE3F4C6B5EA5B /* ZMJSheng.json */,
+				97CBEA016BBFE56C75246C0A73A0D751 /* ZMJShi.json */,
+				004DD81BB8253A58D49889D1F34FF2F8 /* ZMJXian.json */,
+			);
+			name = ZMJAddress.bundle;
+			path = ZMJAddressPickerView/Classes/ZMJAddress.bundle;
+			sourceTree = "<group>";
+		};
+		952D4E19803D08298DCC42A6E0222C60 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDCBAE382E090E2A8DEB96336FB5F20E /* ZMJAddressPickerView.modulemap */,
+				5C6F69CB797AF3E5359F8E3E6E3104D9 /* ZMJAddressPickerView.xcconfig */,
+				2029352005B2CD1057F30EBFB114CE3F /* ZMJAddressPickerView-dummy.m */,
+				EE51111C50C7E69CB902572CE726C582 /* ZMJAddressPickerView-Info.plist */,
+				4E32E3D5E19720C690D17259A4883D60 /* ZMJAddressPickerView-prefix.pch */,
+				06C3FDB9DB1D0B1C5D74FF80CCEC12DF /* ZMJAddressPickerView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ZMJAddressPickerView";
+			sourceTree = "<group>";
+		};
+		B290F321A81CC67AE0576EAF8039BF98 /* ZMJAddressPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				3040DC3CBA664AA8C000BF97DC21A157 /* NSString+ZMJAddressPickerView.h */,
+				0A1EA5D1B0928375178A651BA3980D5F /* NSString+ZMJAddressPickerView.m */,
+				C5256DA9A12EFB7E4803B1DA953AC5AB /* UIColor+ZMJAddressPickerView.h */,
+				F34A1C60915897AC8C0F03C7568866B3 /* UIColor+ZMJAddressPickerView.m */,
+				96F9F9FD47B045F742E9BF45E9159FF6 /* UIView+ZMJAddressPickerView.h */,
+				219596585517F2FA8993DC3A537FF496 /* UIView+ZMJAddressPickerView.m */,
+				F29F2BD223C4949D00432F35 /* UIButton+ZMJAddressPickerView.h */,
+				F29F2BD323C4949E00432F35 /* UIButton+ZMJAddressPickerView.m */,
+				2C5785F9A94E13190AF89DE804647035 /* ZMJAddressModel.h */,
+				E6E382A968A4527675EAE57CAFFEFD8C /* ZMJAddressModel.m */,
+				7F107FF3C80CF9C62D5C1F318CA19BDC /* ZMJAddressPickerView.h */,
+				A1D0B1B17AA20F2EBF32B29F8E5DAD17 /* ZMJAddressPickerView.m */,
+				4B67D64BFFF34E0CF96A70F96031109C /* ZMJAddressPickerView_Macro.h */,
+				64995AB67D41991EF2A31CFECA2BF615 /* ZMJAddressTool.h */,
+				539A5E53A55436731EAF17C0D936A75E /* ZMJAddressTool.m */,
+				1256B7EDBB80D9CA9949E473377FDBA1 /* Pod */,
+				21D0531455DBC060F9B5C389FCC839DA /* Resources */,
+				952D4E19803D08298DCC42A6E0222C60 /* Support Files */,
+				92A34D0BBAFE2F42718672994ECEE042 /* ZMJAddress.bundle */,
+			);
+			name = ZMJAddressPickerView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B36EDAF1B1EC278B62BA18EA317263E8 /* Pods-ZMJAddressPickerView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6BF2724B34C772871F6D7BD7F8FFF111 /* Pods-ZMJAddressPickerView_Tests.modulemap */,
+				08F57EEA073F599F95B2DCAC0BFB5AB0 /* Pods-ZMJAddressPickerView_Tests-acknowledgements.markdown */,
+				ADF7E4DBB3579C5FE6F0C25F56E92443 /* Pods-ZMJAddressPickerView_Tests-acknowledgements.plist */,
+				3BDFA991FD076A67B44C653E232CEA92 /* Pods-ZMJAddressPickerView_Tests-dummy.m */,
+				2D0A3EB68AD3D06D6D527EF2C31ACB87 /* Pods-ZMJAddressPickerView_Tests-Info.plist */,
+				48C498D9D75AC7B4E87A5A33DC351293 /* Pods-ZMJAddressPickerView_Tests-umbrella.h */,
+				A8359A1275B2FCCECD3B575464CD6C4C /* Pods-ZMJAddressPickerView_Tests.debug.xcconfig */,
+				7B81F16ED8CFCD521E9368E86BC1BB89 /* Pods-ZMJAddressPickerView_Tests.release.xcconfig */,
+			);
+			name = "Pods-ZMJAddressPickerView_Tests";
+			path = "Target Support Files/Pods-ZMJAddressPickerView_Tests";
+			sourceTree = "<group>";
+		};
+		C54556613B5C8D2BB6EFA3AB1C1E7C6D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B290F321A81CC67AE0576EAF8039BF98 /* ZMJAddressPickerView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				C54556613B5C8D2BB6EFA3AB1C1E7C6D /* Development Pods */,
+				E0376BC72A6E4A830A4717912167C300 /* Frameworks */,
+				67D5B022BFA4E3B894E53DAA16306F39 /* Pods */,
+				D6581A4130598B24EBE699AEE4B6DE29 /* Products */,
+				F14EE87AD06241F94BE9E06046457A8C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D6581A4130598B24EBE699AEE4B6DE29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FFED36A657123030ABB700256D73F15 /* Masonry.framework */,
+				2B276B0A79173A1D6E83C9B4FB9A4A57 /* MJExtension.framework */,
+				B1156B5B5E25908547F8759A12ECE047 /* Pods_ZMJAddressPickerView_Example.framework */,
+				65F8AF9CAC9C531B29DBA8D0C87D1F61 /* Pods_ZMJAddressPickerView_Tests.framework */,
+				6A8409E2EFEB57AA4106E583A0A84C4A /* ZMJAddressPickerView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD64FDC9B6207F9A86D15154580824A9 /* Pods-ZMJAddressPickerView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				08711DABE11199457B21C0E6D73BBB3C /* Pods-ZMJAddressPickerView_Example.modulemap */,
+				1288F265D66A120CA242F3826F08AF64 /* Pods-ZMJAddressPickerView_Example-acknowledgements.markdown */,
+				DC1CF4FEB07138B057038147964F4D85 /* Pods-ZMJAddressPickerView_Example-acknowledgements.plist */,
+				0CC3016844AE7968CFE56F98F8D97B8D /* Pods-ZMJAddressPickerView_Example-dummy.m */,
+				B137879EFA1044BCD8AFA4BE22006705 /* Pods-ZMJAddressPickerView_Example-frameworks.sh */,
+				6D0D8CD2CA8DFE1BA64D00AD280C3854 /* Pods-ZMJAddressPickerView_Example-Info.plist */,
+				5BEB3C757F0F155901665429F6D7A786 /* Pods-ZMJAddressPickerView_Example-umbrella.h */,
+				CF242A80B16336874C9EE88C1ACE3BB4 /* Pods-ZMJAddressPickerView_Example.debug.xcconfig */,
+				DDDCB77D3A15A9923878FB4EA2F6B057 /* Pods-ZMJAddressPickerView_Example.release.xcconfig */,
+			);
+			name = "Pods-ZMJAddressPickerView_Example";
+			path = "Target Support Files/Pods-ZMJAddressPickerView_Example";
+			sourceTree = "<group>";
+		};
+		E0376BC72A6E4A830A4717912167C300 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A351F7174B273A01B63DDE0801F7AFDC /* Masonry.framework */,
+				F64AB7FA7E8EAEE699EC7DDC2F6E9E12 /* MJExtension.framework */,
+				7AD0E737C5C6CE388B1B0F44F25A4EB9 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F14EE87AD06241F94BE9E06046457A8C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD64FDC9B6207F9A86D15154580824A9 /* Pods-ZMJAddressPickerView_Example */,
+				B36EDAF1B1EC278B62BA18EA317263E8 /* Pods-ZMJAddressPickerView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3E40D8269E973D67FCD3755322689AA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09FD15E1E34B795E64285088796D2859 /* Pods-ZMJAddressPickerView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7E2A36F2A96B3A9AE36F82200937FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BC1D67D7EAF59855E74E4383BD9F59 /* Pods-ZMJAddressPickerView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B04ACBA4522760CA66A5D4AFA498F81 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D65CE579E516BDD5FB36CAA21D693F6 /* MASCompositeConstraint.h in Headers */,
+				9D546E1168C04B0B2EAE005D9275D18B /* MASConstraint+Private.h in Headers */,
+				941955A19C40899D275604E6E9C21A6D /* MASConstraint.h in Headers */,
+				FAFBFA90F7BC3E7CF50F8A5CF0A8B264 /* MASConstraintMaker.h in Headers */,
+				8D4D1F6E4709EBB13974E95DC1059DDC /* MASLayoutConstraint.h in Headers */,
+				6A6AD3A5BBDBFD0B4AF936BD518EC0B1 /* Masonry-umbrella.h in Headers */,
+				346080C0D1CA23399ADD739D722D7CEF /* Masonry.h in Headers */,
+				280D36330BAC5715615FF4A8B42D60D6 /* MASUtilities.h in Headers */,
+				3DA5F1D8E51CDD102A871C2F37770C7B /* MASViewAttribute.h in Headers */,
+				EAE8B0895956885A752B173683A0D889 /* MASViewConstraint.h in Headers */,
+				05EA1447EEA0EB669F8DEE73964A7C60 /* NSArray+MASAdditions.h in Headers */,
+				05A040F35BF1C88F869404E1A940B493 /* NSArray+MASShorthandAdditions.h in Headers */,
+				0AF1AD35706D90B1A91F291B899EF8C0 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				4B0981F9AC628CF5100C50FF4A163A4A /* View+MASAdditions.h in Headers */,
+				E7CA20228B3583F41927813EE904CAD3 /* View+MASShorthandAdditions.h in Headers */,
+				8B92011C9373001132C8148BFC8F50B3 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90FDE77111C6D919E3638762CC3BC53 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29F2BD423C4949E00432F35 /* UIButton+ZMJAddressPickerView.h in Headers */,
+				E87B28D055DEEBBB7468D956CA4549A3 /* NSString+ZMJAddressPickerView.h in Headers */,
+				0582F87AAE32BB2FCF11D1A15633E750 /* UIColor+ZMJAddressPickerView.h in Headers */,
+				813BD5E191263C99EB53ACE607B2CCCB /* UIView+ZMJAddressPickerView.h in Headers */,
+				24ED260DDC0EA1F111431B2D7F4CD644 /* ZMJAddressModel.h in Headers */,
+				C139F0E181C4C8FEAD814992370C1040 /* ZMJAddressPickerView-umbrella.h in Headers */,
+				BD740891903F033211F9D8F2B2D3F596 /* ZMJAddressPickerView.h in Headers */,
+				D7759D42CBD91DAA9B7DC4E1EA79A2D0 /* ZMJAddressPickerView_Macro.h in Headers */,
+				3D32D66E565D4776A5E527D0DB88F812 /* ZMJAddressTool.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1DE317F3D4815D87890DEB09B99C2E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41BBD20F99D3D0EFD9D38337503D4C1F /* MJExtension-umbrella.h in Headers */,
+				9796F9FAC1941A992E8B17F31D62B2E4 /* MJExtension.h in Headers */,
+				912758556B9AB1DEEABE189955C5B8F2 /* MJExtensionConst.h in Headers */,
+				CAD2539BE3C4AB2F1FD1DF30D7629238 /* MJFoundation.h in Headers */,
+				FAB7CF107E7E3EE6FA7949CF18B8BA12 /* MJProperty.h in Headers */,
+				A47472F50A3A7869A644789159571A5C /* MJPropertyKey.h in Headers */,
+				B94AD428EA4EFD7BA79BCF57680D390A /* MJPropertyType.h in Headers */,
+				F0EF96DAB145D1B2247C01B3517B54FE /* NSObject+MJClass.h in Headers */,
+				6EC015330CAC3D60745A20B01928B8DB /* NSObject+MJCoding.h in Headers */,
+				25E03213AA01D83EB415A04635B34F1A /* NSObject+MJKeyValue.h in Headers */,
+				C0C8961B2EAF90DA7244B427C569FCFD /* NSObject+MJProperty.h in Headers */,
+				51E7A17D617310CE81444F5D315EAEF0 /* NSString+MJExtension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		34FD06F31A57D0C04AF24892AC7DCE75 /* Pods-ZMJAddressPickerView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF18A59091ECA7469CB177ECD524BC58 /* Build configuration list for PBXNativeTarget "Pods-ZMJAddressPickerView_Tests" */;
+			buildPhases = (
+				3E40D8269E973D67FCD3755322689AA6 /* Headers */,
+				444DA44093A4CDAD6A4BA6CA7E91C970 /* Sources */,
+				DE11BBF36CEE7D7E0EF9F09FFA861FD4 /* Frameworks */,
+				20D068C5C976D3482919075CC9BC2983 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF2A62BA1E81D674AF5BF2744ED48B56 /* PBXTargetDependency */,
+			);
+			name = "Pods-ZMJAddressPickerView_Tests";
+			productName = "Pods-ZMJAddressPickerView_Tests";
+			productReference = 65F8AF9CAC9C531B29DBA8D0C87D1F61 /* Pods_ZMJAddressPickerView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		484D17E95CEB47031A0213FD8593DDFA /* ZMJAddressPickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81CD8FE116943BD75049815FDD60132A /* Build configuration list for PBXNativeTarget "ZMJAddressPickerView" */;
+			buildPhases = (
+				D90FDE77111C6D919E3638762CC3BC53 /* Headers */,
+				D5877F31DE7FA408733867A5A85B93C3 /* Sources */,
+				DB80CEBE035857F4C5DFE9DAEF71078F /* Frameworks */,
+				4B74643E737A822308518CF82B7D24A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				052AFC628D88A788A12A647B4FC75306 /* PBXTargetDependency */,
+				D9A71923F3542A01BA257045859684F5 /* PBXTargetDependency */,
+			);
+			name = ZMJAddressPickerView;
+			productName = ZMJAddressPickerView;
+			productReference = 6A8409E2EFEB57AA4106E583A0A84C4A /* ZMJAddressPickerView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4D3BA58D0583DF37575CACAB3DDADC85 /* MJExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B8E68449A18121BC5A5B5C491F1283E /* Build configuration list for PBXNativeTarget "MJExtension" */;
+			buildPhases = (
+				DB1DE317F3D4815D87890DEB09B99C2E /* Headers */,
+				7062CDA8FD11E2E9D19A9A40021C44AD /* Sources */,
+				E3DFB7F06EC80553131DB5B0993D681C /* Frameworks */,
+				5526C4C8822D8F13C2C736A5F9677481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MJExtension;
+			productName = MJExtension;
+			productReference = 2B276B0A79173A1D6E83C9B4FB9A4A57 /* MJExtension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87FD40BD683E3BD044AA4D1B5CA58652 /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				7B04ACBA4522760CA66A5D4AFA498F81 /* Headers */,
+				038B428AD06C5A47FAF2BEFE16C6DC16 /* Sources */,
+				5E047F76604659BF1B2099B2C412AC93 /* Frameworks */,
+				895ED1B8779C1D82DF681CBFF67AC570 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = 1FFED36A657123030ABB700256D73F15 /* Masonry.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D0AB8B8ED3AD3A1F40244DDC9EA0376F /* Pods-ZMJAddressPickerView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 080763040E5E0B69540A98C9BE6D28E1 /* Build configuration list for PBXNativeTarget "Pods-ZMJAddressPickerView_Example" */;
+			buildPhases = (
+				6D7E2A36F2A96B3A9AE36F82200937FC /* Headers */,
+				8B630B295B54D0BAD553338D70A0BB77 /* Sources */,
+				3CED0D74EF6BFDC389C91EDF64F4A673 /* Frameworks */,
+				B914D6D6094970BD9190E464A1B03F3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A04CD3F44B1967E513DA3A1F506A5F1B /* PBXTargetDependency */,
+				C93CB775505CDEF378D35134AE8D987E /* PBXTargetDependency */,
+				FB0B0A98575DC1D34DD185A1CD676416 /* PBXTargetDependency */,
+			);
+			name = "Pods-ZMJAddressPickerView_Example";
+			productName = "Pods-ZMJAddressPickerView_Example";
+			productReference = B1156B5B5E25908547F8759A12ECE047 /* Pods_ZMJAddressPickerView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = D6581A4130598B24EBE699AEE4B6DE29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55AF53E6C77A10ED4985E04D74A8878E /* Masonry */,
+				4D3BA58D0583DF37575CACAB3DDADC85 /* MJExtension */,
+				D0AB8B8ED3AD3A1F40244DDC9EA0376F /* Pods-ZMJAddressPickerView_Example */,
+				34FD06F31A57D0C04AF24892AC7DCE75 /* Pods-ZMJAddressPickerView_Tests */,
+				484D17E95CEB47031A0213FD8593DDFA /* ZMJAddressPickerView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20D068C5C976D3482919075CC9BC2983 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B74643E737A822308518CF82B7D24A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2737D7ECDBBACF60D7D6710FB82F43 /* ZMJAddress.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5526C4C8822D8F13C2C736A5F9677481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		895ED1B8779C1D82DF681CBFF67AC570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B914D6D6094970BD9190E464A1B03F3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		038B428AD06C5A47FAF2BEFE16C6DC16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BFF65958F014760B6AC4742824892EB /* MASCompositeConstraint.m in Sources */,
+				E8DD5D1D406150E1C80AD015271B6848 /* MASConstraint.m in Sources */,
+				78B2727EE5D693F58D019DB098005101 /* MASConstraintMaker.m in Sources */,
+				8539B851E01A58467BE49CA3FA77223C /* MASLayoutConstraint.m in Sources */,
+				1972E85F0FCD0F3EAF28ED7CD036286E /* Masonry-dummy.m in Sources */,
+				297A3627CF2F032CBFDC61D1A3786E63 /* MASViewAttribute.m in Sources */,
+				B7D645EC004610E8A581E532D28771EC /* MASViewConstraint.m in Sources */,
+				098630ECDB64ED7B89F5F687C82B4AC3 /* NSArray+MASAdditions.m in Sources */,
+				C0861ADB4C5FA30F4F9E051F7638A264 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				A35FBEEC7D088AEC05297E8292A32C77 /* View+MASAdditions.m in Sources */,
+				0967598607D521318F69D7D39D517B20 /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		444DA44093A4CDAD6A4BA6CA7E91C970 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FCD85450396BA20DF575FB7DFF6C5D /* Pods-ZMJAddressPickerView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7062CDA8FD11E2E9D19A9A40021C44AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05452B06007B8F1969A23C3C9D494CBD /* MJExtension-dummy.m in Sources */,
+				01E3E1FB1F9A0FA56C79608F8139A32F /* MJExtensionConst.m in Sources */,
+				033484819373AB7E020C0026CAE0F7BF /* MJFoundation.m in Sources */,
+				3BAA6DDBE44238B40D6A72A16EF41814 /* MJProperty.m in Sources */,
+				7155607EADA71F37CFE188D866B7E40A /* MJPropertyKey.m in Sources */,
+				8A2E1E487FBFC3DF55C12C056BFA36A1 /* MJPropertyType.m in Sources */,
+				0077E2C1E1042512F36A3204CFD42BEF /* NSObject+MJClass.m in Sources */,
+				7BE71B62F38458AC771581F60006F9CE /* NSObject+MJCoding.m in Sources */,
+				99BF63084CB0EDEA0A9CBB77E8315E6E /* NSObject+MJKeyValue.m in Sources */,
+				07288680C9E7EDC1E240E0E3C50EE65C /* NSObject+MJProperty.m in Sources */,
+				E6775033B3F0080B56E29AB395A08867 /* NSString+MJExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B630B295B54D0BAD553338D70A0BB77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBDA3AF2D8F6D30BD9A73E1AB2A0ECBC /* Pods-ZMJAddressPickerView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5877F31DE7FA408733867A5A85B93C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE9882A043BAF11669E627808C3FEF7 /* NSString+ZMJAddressPickerView.m in Sources */,
+				85F733DC174F6DD3DC9F01541E5A7FC3 /* UIColor+ZMJAddressPickerView.m in Sources */,
+				DAA27204A46114C5500AD824C4E2720A /* UIView+ZMJAddressPickerView.m in Sources */,
+				FD154EDD24FDEA908DC532CFF46CFB21 /* ZMJAddressModel.m in Sources */,
+				9C4B2EAE1FF4D93738956A3D8E2D9B83 /* ZMJAddressPickerView-dummy.m in Sources */,
+				81FC9945D9B5002909A83E8FD7B47BE9 /* ZMJAddressPickerView.m in Sources */,
+				F29F2BD523C4949E00432F35 /* UIButton+ZMJAddressPickerView.m in Sources */,
+				517A9DA0F7ACEFB0F7ECA00EABFBE871 /* ZMJAddressTool.m in Sources */,
+				7D0EC3D0969396DA349F3F25A693E51D /* ZMJSheng.json in Sources */,
+				B22FE9B432193B8AA4BFF1BDED16473D /* ZMJShi.json in Sources */,
+				41C4A7E10ABE1668643FEA3E4F661343 /* ZMJXian.json in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		052AFC628D88A788A12A647B4FC75306 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MJExtension;
+			target = 4D3BA58D0583DF37575CACAB3DDADC85 /* MJExtension */;
+			targetProxy = 2323FA98AD3F1E5DD4239C875993F461 /* PBXContainerItemProxy */;
+		};
+		A04CD3F44B1967E513DA3A1F506A5F1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MJExtension;
+			target = 4D3BA58D0583DF37575CACAB3DDADC85 /* MJExtension */;
+			targetProxy = 056D248F2C2036AAB551EDA487E614AC /* PBXContainerItemProxy */;
+		};
+		AF2A62BA1E81D674AF5BF2744ED48B56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ZMJAddressPickerView_Example";
+			target = D0AB8B8ED3AD3A1F40244DDC9EA0376F /* Pods-ZMJAddressPickerView_Example */;
+			targetProxy = 540AD20CDE7787069077A51BE929745A /* PBXContainerItemProxy */;
+		};
+		C93CB775505CDEF378D35134AE8D987E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = 112E415A1D20DF3D8CA845A489654A57 /* PBXContainerItemProxy */;
+		};
+		D9A71923F3542A01BA257045859684F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = 8B6CA1CF73083519B36C37D3A9A16E8C /* PBXContainerItemProxy */;
+		};
+		FB0B0A98575DC1D34DD185A1CD676416 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZMJAddressPickerView;
+			target = 484D17E95CEB47031A0213FD8593DDFA /* ZMJAddressPickerView */;
+			targetProxy = 7F40CB7AAF3EE3B7DD73B0E70CC071B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		16B169976C31BCDD258DA1C0B19CDEF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDDCB77D3A15A9923878FB4EA2F6B057 /* Pods-ZMJAddressPickerView_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZMJAddressPickerView_Example/Pods-ZMJAddressPickerView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZMJAddressPickerView_Example/Pods-ZMJAddressPickerView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		218475F1E3808A229F26FD706FA4C9A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF242A80B16336874C9EE88C1ACE3BB4 /* Pods-ZMJAddressPickerView_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZMJAddressPickerView_Example/Pods-ZMJAddressPickerView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZMJAddressPickerView_Example/Pods-ZMJAddressPickerView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		523937C38224A35A51DEA084F7FE7B89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8359A1275B2FCCECD3B575464CD6C4C /* Pods-ZMJAddressPickerView_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZMJAddressPickerView_Tests/Pods-ZMJAddressPickerView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZMJAddressPickerView_Tests/Pods-ZMJAddressPickerView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		527D6664223B803E9C7307F58E3CA12A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E656D33BA2F7A567B68DA12B1B07D752 /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8C65F7CC9708EE0690525E4800598E8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E656D33BA2F7A567B68DA12B1B07D752 /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE9988BD8FFD04D9EE663DA5AC2BE01D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C6F69CB797AF3E5359F8E3E6E3104D9 /* ZMJAddressPickerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZMJAddressPickerView/ZMJAddressPickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZMJAddressPickerView/ZMJAddressPickerView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZMJAddressPickerView/ZMJAddressPickerView.modulemap";
+				PRODUCT_MODULE_NAME = ZMJAddressPickerView;
+				PRODUCT_NAME = ZMJAddressPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AFA11103E053FCD466C5BEED67B0EDF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B81F16ED8CFCD521E9368E86BC1BB89 /* Pods-ZMJAddressPickerView_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZMJAddressPickerView_Tests/Pods-ZMJAddressPickerView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZMJAddressPickerView_Tests/Pods-ZMJAddressPickerView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C842A608BABB0D1399294C5C7D55AB24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0716B409ECFD3AC35D305DE9322FD58 /* MJExtension.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MJExtension/MJExtension-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MJExtension/MJExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MJExtension/MJExtension.modulemap";
+				PRODUCT_MODULE_NAME = MJExtension;
+				PRODUCT_NAME = MJExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CB7BACF17C024D244144DEEA76CB6CA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C6F69CB797AF3E5359F8E3E6E3104D9 /* ZMJAddressPickerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZMJAddressPickerView/ZMJAddressPickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZMJAddressPickerView/ZMJAddressPickerView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZMJAddressPickerView/ZMJAddressPickerView.modulemap";
+				PRODUCT_MODULE_NAME = ZMJAddressPickerView;
+				PRODUCT_NAME = ZMJAddressPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E61777CBBD35D87D3F573DF8663F99A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0716B409ECFD3AC35D305DE9322FD58 /* MJExtension.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MJExtension/MJExtension-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MJExtension/MJExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MJExtension/MJExtension.modulemap";
+				PRODUCT_MODULE_NAME = MJExtension;
+				PRODUCT_NAME = MJExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		080763040E5E0B69540A98C9BE6D28E1 /* Build configuration list for PBXNativeTarget "Pods-ZMJAddressPickerView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				218475F1E3808A229F26FD706FA4C9A4 /* Debug */,
+				16B169976C31BCDD258DA1C0B19CDEF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B8E68449A18121BC5A5B5C491F1283E /* Build configuration list for PBXNativeTarget "MJExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C842A608BABB0D1399294C5C7D55AB24 /* Debug */,
+				E61777CBBD35D87D3F573DF8663F99A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81CD8FE116943BD75049815FDD60132A /* Build configuration list for PBXNativeTarget "ZMJAddressPickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB7BACF17C024D244144DEEA76CB6CA5 /* Debug */,
+				AE9988BD8FFD04D9EE663DA5AC2BE01D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87FD40BD683E3BD044AA4D1B5CA58652 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C65F7CC9708EE0690525E4800598E8E /* Debug */,
+				527D6664223B803E9C7307F58E3CA12A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF18A59091ECA7469CB177ECD524BC58 /* Build configuration list for PBXNativeTarget "Pods-ZMJAddressPickerView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				523937C38224A35A51DEA084F7FE7B89 /* Debug */,
+				AFA11103E053FCD466C5BEED67B0EDF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

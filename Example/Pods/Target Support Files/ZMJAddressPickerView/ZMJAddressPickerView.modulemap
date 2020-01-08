@@ -1,0 +1,6 @@
+framework module ZMJAddressPickerView {
+  umbrella header "ZMJAddressPickerView-umbrella.h"
+
+  export *
+  module * { export * }
+}
